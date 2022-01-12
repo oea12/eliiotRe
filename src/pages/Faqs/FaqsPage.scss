@@ -1,0 +1,133 @@
+#faqs {
+    background-color: $background;
+    padding: 0px 16px;    
+
+    .caption {
+        margin-top: 46px;
+
+        .content {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+
+            .caption-content {
+                padding: 0px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                max-width: 480px;
+
+                .caption-content-title {
+                    font-family: 'filson-soft';
+                    font-size: 32px;
+                    font-weight: 700;
+                    line-height: 47px;                    
+                    text-align: left;
+                    color: $textcolor;
+                }
+
+                .caption-content-subtitle {                    
+                    font-family: 'filson-soft';
+                    font-size: 36px;
+                    font-weight: 700;
+                    line-height: 47px;
+                    text-align: left;    
+                    color: $textcolor;
+                    
+                    .caption-content-subtitle_down {
+                        color: $primary;
+                    }
+                }
+            }
+
+            .caption-image {
+                padding: 0px;
+                max-width: 336px;
+                
+                img {
+                    width: 100%;
+                }
+            }
+        }
+
+    }
+
+    .faqs {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 50px;
+
+        .faq {
+            margin-top: 16px;
+            max-width: 824px;
+            width: 100%;
+            border-radius: 20px;
+            background-color: white;
+            padding: 16px;
+            position: relative;
+            
+            &:first-child {
+                margin-top: 0px;            
+            }            
+
+            .faq-title {
+                font-family: 'Inter';
+                font-size: 18px;                
+                font-weight: 600;
+                line-height: 22px;
+                text-align: left;
+                padding-right: 40px;
+                color: $textcolor;
+
+                @media( max-width: $md ) {
+                    font-size: 16px;
+                }
+                
+            }
+
+            .faq-text {
+                margin-top: 25px;
+                font-family: 'Inter';
+                font-size: 18px;                
+                font-weight: 400;
+                line-height: 22px;
+                text-align: left;
+                color: #4A4A4A;
+
+                @media( max-width: $md ) {
+                    font-size: 16px;
+                }                
+            }
+
+            .faq-toggle {
+                border: unset;
+                background-color: unset;
+                color: $primary;
+                position: absolute;
+                top: 7px;
+                right: 16px;
+                font-size: 24px;
+
+                .mdi-plus {
+                    display: none;
+                }
+                .mdi-minus {
+                    display: block;
+                }                
+
+                &.collapsed {
+                    .mdi-minus {
+                        display: none;
+                    }
+                    .mdi-plus {
+                        display: block;
+                    }
+                }
+            }
+
+        }
+    }
+}

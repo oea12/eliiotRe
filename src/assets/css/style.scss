@@ -1,0 +1,45 @@
+$background : #F9FAFB;
+$primary : #198E9B;
+$secondary : #FFC95C;
+$textcolor : #5C7190;
+$footer : #2C3747;
+
+$sm : 576px;
+$md : 768px;
+$lg : 1024px;
+$xl : 1280px;
+
+html {
+    overflow-y : unset !important;
+}
+
+i {
+    font-family: 'Material Design Icons';
+}
+
+a{
+    display: block;
+    &:hover {
+        text-decoration: unset;
+    }
+}
+
+#app {
+    background: $background;
+    font-family: 'Roboto', Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;    
+}
+
+section {
+
+    .content {
+        max-width: 1024px;
+        width: 100%;
+        margin: 0px auto;
+    }
+}
+
+*:focus {
+    outline: none !important;
+}

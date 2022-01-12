@@ -1,0 +1,167 @@
+#footer {
+    background-color: $footer;
+    color: #F6F7F8;
+
+    .content {
+        max-width: 1024px;        
+        width: 100%;
+        margin: 0px;
+        margin-bottom: 60.35px;
+        flex-direction: row;
+        margin-left: auto;
+        margin-right: auto;
+
+        @media( max-width: $md ) {
+            margin-bottom: 156px;
+            flex-direction: column;
+        }
+
+        .logo, .faqButton, .blogButton {
+            padding: 32px 0px 32px 99px;
+            cursor: pointer;
+
+            @media( max-width: $md ) {
+                padding: 32px 16px;
+            }
+            
+            img {
+                width: 101px;
+                height: 35px;
+            }
+        }
+
+        .faqButton {
+            padding-left: 10px;
+        }
+
+        .blogButton {
+            padding-left: 10px;
+        }
+
+        .menu {
+            padding: 46px 26px 32px 0px;
+
+            @media( max-width: $md ) {
+                padding: 16px;
+            }
+
+            .menu-content {
+                
+                .menu-items {
+                    padding: 0px;
+                    padding-left: 8px;
+
+                    @media( max-width: $md ) {
+                        padding-left: 16px;
+                    }
+
+                    .menu-items-title {
+                        font-family: 'Inter';
+                        font-size: 14px;
+                        font-weight: 600;
+                        line-height: 16.94px;
+                        text-align: left;
+                        color: white;
+                    }
+
+                    .menu-items-item {
+                        cursor: pointer;
+                        margin-top: 12px;
+                        font-family: 'Inter';
+                        font-size: 14px;
+                        font-weight: 400;
+                        line-height: 16.94px;
+                        text-align: left;
+                        color: #1BBCB2;
+                    }
+
+                }
+            }
+        }
+
+    }
+
+    /*Logos app*/
+
+    .google_play_button, .app_store_button {
+        margin-top: 10px;
+        margin-bottom: 5px;
+    }
+
+    .store_button_footer{
+        max-width: 80%;
+    }
+    
+    .divider {        
+        padding: 0px;
+        width: 96%;
+        margin: auto;
+        height: 0px;
+        opacity: 0.2;
+        border: 1px solid #EEEEF2;
+
+        @media( max-width: $md ) {
+            width: 90%;
+        }
+    }
+    
+    .copyright {
+        display: flex;
+        padding-top: 24px;
+        padding-bottom: 43.65px;
+        padding-left: 99px;
+        font-family: Inter;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 14.62px;
+        letter-spacing: 0em;
+        text-align: left;   
+        max-width: 1024px;
+        
+        margin: auto;
+        
+        @media( max-width: $md ) {
+            padding-left: 0px;
+            margin: 24px 16px 0px 16px;
+        }
+    }
+
+    .buttons_footer{
+        height: 41px;
+        width: 167px;
+        padding-top: 11px;
+        padding-left: 3px;
+        border-radius: 50px;
+        background: #FFC95C;
+
+        font-family: Inter;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 17px;
+        letter-spacing: 0em;
+        text-align: center;
+        color: #2C3747;
+
+    }
+
+    .faqButton .buttons_footer {
+        width: 200px;
+    }
+
+
+        @media( max-width: $sm ) {
+            .menu-items{
+                margin-top: 10px;
+            }
+            .faqButton, .blogButton {
+                padding-left: 16px !important;
+                padding-top: 8px !important;
+                padding-bottom: 8px !important;
+            }
+            .google_play_button, .app_store_button{
+                max-width: 60%;
+            }
+        }
+
+}

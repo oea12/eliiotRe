@@ -1,0 +1,39 @@
+<div id='topbar' class="navbar">    
+
+    <div class='menu'>
+
+        <div class='menu-icon_logo'>
+<!--             <button class='menu-icon collapsed' data-toggle="collapse" data-target='#mobile-menu' aria-expanded="false" aria-controls='mobile-menu'>
+                <i class='mdi mdi-menu'></i>
+                <i class='mdi mdi-close'></i>
+            </button> -->
+
+        
+            <div class='logo' @click='goTo( "/" )'>
+                <img src='images/logo.svg'/>
+            </div>
+
+<!--             <div class='collapse' id='mobile-menu'>
+                <div class='mobile-menu-items'>
+                    <div class='mobile-menu-item' :class='isActive ? "active" : ""' @click='goTo( "faqs" )'>
+                        Preguntas frecuentes
+                    </div>
+                </div>
+            </div> -->
+        </div>
+
+        <div class='menu-items'>
+<!--             <div class='menu-item d-none d-md-flex' :class='isActive ? "active" : ""' @click='goTo( "faqs" )'>
+                Preguntas frecuentes
+            </div> -->
+            <a class='menu-item download-app blog-button' href='https://eliiot.com/blog'>
+                Eliiot blog
+            </a>
+            <a class='menu-item download-app app-button' href='http://onelink.to/9b8jt2'>
+                Descargar app
+            </a>
+        </div>
+
+    </div>
+    
+</div>

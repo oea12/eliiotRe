@@ -1,0 +1,175 @@
+#topbar {
+    height: 73px;
+    background-color: white;
+    border-radius: 0px 0px 20px 20px;
+    z-index: 9;
+
+    @media( max-width: $md ) {
+        height: 56px;
+        margin-top: 16px;
+        padding: 0px;
+    }
+
+    .menu {
+        max-width: 1024px;
+        margin: 0px auto;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 16px 24px 17px 24px;
+
+        @media( max-width: $md ) {            
+            padding: 7px 8px 9px 8px;
+        }
+
+        .menu-icon_logo {
+
+            .menu-icon {
+                height: 24px;
+                width: 24px;
+                margin: 16px 8px 16px 8px;
+                margin-right: 8px;
+                margin-top: 16px;
+                padding: 0px;
+                border: unset;
+                background-color: unset;
+                font-size: 26px;
+                line-height: 20px;
+                
+                color: $primary;
+
+                img {
+                    width: 100%;
+                }
+        
+                @media( min-width: $md ) {
+                    display: none;
+                }
+
+                .mdi-menu {
+                    display: none;
+                }
+                .mdi-close {
+                    display: block;
+                }                
+
+                &.collapsed {
+                    .mdi-close {
+                        display: none;
+                    }
+                    .mdi-menu {
+                        display: block;
+                    }
+                }                
+            }        
+        
+            .logo {            
+                img {
+                    width: 82.44px;
+                    height: 28px;
+                    margin: 6px 0px;
+                    position: relative;
+                    cursor: pointer;
+
+                    @media( max-width: $md ) {
+                        margin: 13px 0px 15px 0px;
+                    }
+                }
+            }
+
+            @media( max-width: $md ) {
+                display: flex;
+            }
+        }
+
+        .menu-items, .mobile-menu-item {
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+
+            .menu-item, .mobile-menu-item {
+                font-family: 'Inter';
+                font-size: 14px;
+                font-weight: 600;
+                line-height: 16.94px;
+                color: #5C7190;
+                margin-left: 30px;
+                padding-bottom: 5px;
+                margin-top: 5px;                
+
+                &.download-app {
+                    padding-bottom: 0px;
+                    margin-top: 0px;
+                    margin-left: 72px;
+                    background-color: #FFC95C;
+                    border-radius: 20px 20px 20px 4px;
+                    padding: 11.5px 24px;
+                    color: #2C3747;
+
+                    @media( max-width: $md ) {
+                        margin-left: 0px;
+                        justify-content: end;
+                        padding: 11.5px 16px;
+                    }
+                }
+
+                &.blog-button {
+                    display: block;
+                    @media( max-width: $sm ) {
+                        display: none;
+                    }
+                }
+
+                &.app-button {
+                    display: none;
+                    @media( max-width: $sm ) {
+                        display: block;
+                    }
+                }
+
+                &.active {
+                    border-bottom: 4px solid #FFC95C;
+                }
+            }
+        }
+
+        .mobile-menu-items {
+            border-top: 1px solid #cccccc;
+            border-bottom: 1px solid #cccccc;
+            display: flex;
+            flex-direction: column;
+
+            .mobile-menu-item {
+                font-family: 'Inter';
+                font-size: 16px;
+                margin: 0px;
+                padding: 16px 0px;
+                justify-content: center;
+                width: 100%;
+                border-bottom: 1px solid rgba( $textcolor, 0.2 );
+                color: $textcolor;
+
+                &:last-child {
+                    border-bottom: unset;
+                }
+            }
+        }
+
+        #mobile-menu {            
+            position: absolute;
+            left: 0px;
+            right: 0px;
+            top: 100%;
+            background-color: white;
+            z-index: 9;
+
+            @media( min-width: $md ) {
+                display: none;
+            }
+        }
+
+    }
+
+}
