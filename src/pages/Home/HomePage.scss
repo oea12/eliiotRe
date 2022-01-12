@@ -610,56 +610,7 @@
         }
 
     }
-    .menu-items, .mobile-menu-item {
-        display: flex;
-        align-items: center;
-        cursor: pointer;
 
-        .menu-item, .mobile-menu-item {
-            font-family: 'Inter';
-            font-size: 14px;
-            font-weight: 600;
-            line-height: 16.94px;
-            color: #5C7190;
-            margin-left: 30px;
-            padding-bottom: 5px;
-            margin-top: 5px;
-
-            &.download-app {
-                padding-bottom: 0px;
-                margin-top: 0px;
-                margin-left: 72px;
-                background-color: #FFC95C;
-                border-radius: 20px 20px 20px 4px;
-                padding: 11.5px 24px;
-                color: #2C3747;
-
-                @media( max-width: $md ) {
-                    margin-left: 0px;
-                    justify-content: end;
-                    padding: 11.5px 16px;
-                }
-            }
-
-            &.blog-button {
-                display: block;
-                @media( max-width: $sm ) {
-                    display: none;
-                }
-            }
-
-            &.app-button {
-                display: none;
-                @media( max-width: $sm ) {
-                    display: block;
-                }
-            }
-
-            &.active {
-                border-bottom: 4px solid #FFC95C;
-            }
-        }
-    }
 
     .questions {
 
